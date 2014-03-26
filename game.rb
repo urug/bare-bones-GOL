@@ -5,9 +5,9 @@ require './drawer.rb'
 
 class Game 
  def initialize
-   @world = World.new
+   @board = Board.new
 
-   @drawer = Drawer.new(@world, cellsize: 10)
+   @drawer = Drawer.new(@board, cellsize: 10)
    @drawer.show
  end
 
